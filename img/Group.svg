@@ -1,0 +1,8 @@
+<svg width="544" height="544" viewBox="0 0 544 544" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M543 407.5L272 272L1 407.5L272 543L543 407.5Z" fill="#4D4D4D" stroke="black" stroke-miterlimit="1"/>
+<path d="M543 407.5L272 272V1.00006L543 136.5V407.5Z" fill="#999999" stroke="black" stroke-miterlimit="1"/>
+<path d="M272 272L1 407.5V136.5L272 1V272Z" fill="#999999" stroke="black" stroke-miterlimit="1"/>
+<path d="M272 543L1 407.5V136.5L272 272V543Z" fill="#CCCCCC" stroke="black" stroke-width="2" stroke-miterlimit="1"/>
+<path d="M272 543L543 407.5V136.5L272 272V543Z" fill="#CCCCCC" stroke="black" stroke-width="2" stroke-miterlimit="1"/>
+<path d="M543 136.5L272 1L1 136.5L272 272L543 136.5Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="1"/>
+</svg>

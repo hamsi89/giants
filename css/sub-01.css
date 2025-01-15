@@ -1,0 +1,412 @@
+:root {
+    --black-color: #333333;
+    --red-color: #D33854;
+    --midgray-color: rgba(51, 51, 51, 0.5);
+    --dark-color: #1B1B1B;
+    --white-color: #fff;
+    --sky-color: #63B0E4;
+    --gray-color: #D9D9D9;
+    --blue-color: #2E3192;
+
+}
+
+
+
+@font-face {
+    font-family: "giants-inline";
+    src: url(../css/assets/Giants-Inline.otf);
+}
+@font-face {
+    font-family: "giants-reg";
+    src: url(../css/assets/Giants-Regular.otf);
+}
+
+@font-face {
+    font-family: "giants-bold";
+    src: url(../css/assets/Giants-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont";
+    src: url(../css/assets/Montserrat-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "pre-reg";
+    src: url(../css/assets/Pretendard-Regular.woff2);
+}
+
+@font-face {
+    font-family: "pre-bold";
+    src: url(../css/assets/Pretendard-Bold.woff2);
+}
+
+@font-face {
+    font-family: "pre-mid";
+    src: url(../css/assets/Pretendard-Medium.woff2);
+}
+
+@font-face {
+    font-family: "pre-semi";
+    src: url(../css/assets/Pretendard-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: "pre-extra";
+    src: url(../css/assets/Pretendard-ExtraBold.woff2);
+}
+
+
+
+h2{
+    font-size: 100px;
+    font-family: "giants-bold";
+    color: var(--white-color);
+}
+
+span{
+    display: block;
+    margin-bottom: 1rem;
+}
+.header{
+    background-color: var(--red-color);
+}
+
+.team-section{
+    background-color: var(--red-color);}
+
+.team-section .inner{
+    display: flex;
+    gap: 2.4%;
+    position: relative;
+}
+
+.team-section .inner .text-wrap{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 2%;
+
+}
+
+
+.team-section .inner .text-wrap .title{
+    margin-bottom: 13vw;
+}
+
+.team-section .inner .text-wrap p{
+    color: var(--white-color);
+    font-family: "pre-bold";
+    font-size: 30px;
+    text-align: right;
+
+}
+
+.team-section .inner .text-wrap span{
+    color: var(--white-color);
+    font-family: "pre-reg";
+    font-size: 2rem;
+}
+
+.team-section .inner .image{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+.team-section .inner .image img{
+    width: 100%;
+    object-fit: cover;
+   
+
+}
+
+.fan-section{
+    margin-top: 10rem;
+}
+
+.fan-section .inner .section-title{
+    color: var(--red-color);
+
+}
+
+.fan-section .inner .item-wrap{
+    display: flex;
+    margin-top: 10rem;
+    gap:2%;
+}
+
+.fan-section .inner .item-wrap img{
+    width: 65%;
+    object-fit: cover;
+
+}
+
+.fan-section .inner .item-wrap .text span{
+    font-family: "pre-reg";
+    font-size: 2rem;
+}
+
+.history-section{
+    background-color: var(--red-color);
+}
+
+.history-section .inner{
+text-align: center;
+}
+
+
+.history-section .inner .history-wrap{
+    max-width: 600px;
+    width: calc(100% - 40px);
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.history-section .inner .history-wrap .line{
+    position: absolute;
+    background-color: var(--white-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+
+}
+
+
+.history-section .inner .history-wrap .history{
+    position: relative;
+    width: 100%;
+}
+
+
+.history-section .inner .history-wrap .history::after{
+    content: '.';
+    position: absolute;
+    font-size: 10rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white-color);
+    -webkit-text-stroke: 3px solid #D33854;
+}
+
+.history-section .inner .history-wrap .history .year p{
+    color: var(--black-color);
+    font-family: "giants-reg";
+    font-size: 5rem;
+}
+
+.history-section .inner .history-wrap .history .info p{
+    color: var(--white-color);
+    font-family: "giants-reg";
+    font-size: 2rem;
+}
+
+.history-section .inner .history-wrap .history .info h4{
+    color: var(--white-color);
+    font-family: "giants-reg";
+    font-size: 3rem;
+}
+.history-section .inner .history-wrap .history.left{
+    align-self: first baseline;
+    text-align: left;
+}
+
+
+.history-section .inner .history-wrap .history.right{
+    text-align: right;
+
+    align-self: flex-end;
+}
+
+.root-section .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.root-section .inner .nav{
+    width: 15%;
+    margin-top: 2rem;
+}
+
+.root-section .inner .nav li{
+    color: var(--midgray-color);
+    font-size: 4rem;
+    font-family: 'giants-reg';
+    margin-bottom: 2rem;
+}
+.root-section .inner .nav li.active{
+    color: var(--black-color);
+}
+.root-section .inner .text{
+    width: 43%;
+}
+
+.root-section .inner .text h2{
+    color: var(--black-color);
+    margin-bottom: 2rem;
+}
+
+.root-section .inner .text span{
+    font-size: 1.8rem;
+    font-family: 'pre-reg';
+}
+
+.root-section .inner .text a{
+    margin-top: 4rem;
+    display: block
+}
+
+.root-section .inner .text a p{
+    background-color: var(--red-color);
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: var(--white-color);
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-family: 'pre-semi';
+}   
+
+.root-section .inner img{
+    width: 40%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1280px) {
+    .team-section .inner{
+        display: block;
+    }
+
+    .team-section .inner .text-wrap{
+        width: 100%;
+        
+    }
+
+    .team-section .inner .text-wrap p {
+        text-align: left;
+    }
+
+    .team-section .inner .text-wrap span{
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+
+    .team-section .inner .image{
+        width: 100%;
+        text-align: right;
+        position: relative;
+        
+    }
+
+    .team-section .inner .image img{
+        width: 50%;
+    }
+
+    .fan-section .inner .item-wrap{
+        display: block;
+        text-align: center;
+    }
+
+    .fan-section .inner .item-wrap img{
+        width: 100%;
+        height: 400px;
+        
+    }
+
+    .fan-section .inner .item-wrap .text span{
+
+        margin-top: 2rem;
+    }
+
+    .root-section .inner {
+        display: block;
+    }
+
+    .root-section .inner .nav{
+        width: 100%;
+    
+    }
+
+    
+    .root-section .inner .nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .root-section .inner .nav li{
+        width: 100px;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .root-section .inner .text{
+        width: 100%;
+    }
+
+    .root-section .inner .text h2{
+        text-align: center;
+    }
+
+    .root-section .inner .text a{
+        text-align: center; 
+        margin-bottom: 4rem ;
+    }
+
+    .root-section .inner img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    h2{
+        font-size: 5rem;
+    }
+
+    .team-section .inner .text-wrap span{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+ 
+    .team-section .inner .image img {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .fan-section{
+        margin: 0;
+    }
+
+    .fan-section .inner .item-wrap{
+        margin-top: 2rem;
+        
+    }
+
+    .fan-section .inner .item-wrap .text span{
+        font-size: 1.6rem;
+    }
+
+    .history-section .inner .history-wrap .history .year p{
+        font-size: 2.4rem;
+    }
+
+    .history-section .inner .history-wrap .history .info p{
+        font-size: 1.8rem;
+        font-family: "pre-reg";
+    }
+
+    .history-section .inner .history-wrap .history .info h4{
+        font-size: 2rem;
+    }
+
+    
+}
